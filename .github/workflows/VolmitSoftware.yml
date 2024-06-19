@@ -16,7 +16,7 @@ on:
 
 jobs:
   Iris:
-    uses: GaLaXyILY/PLUGIN/.github/workflows/gradle-build.yml@main
+    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@main
     with:
       repository: "VolmitSoftware/Iris"
       name: "Iris"
@@ -32,13 +32,13 @@ jobs:
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4 --compile craftbukkit --remapped
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.6 --compile craftbukkit --remapped
   Adapt:
-    uses: GaLaXyILY/PLUGIN/.github/workflows/gradle-build.yml@main
+    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@main
     with:
       repository: "VolmitSoftware/Adapt"
       name: "Adapt"
       java: "17"
   React:
-    uses: GaLaXyILY/PLUGIN/.github/workflows/gradle-build.yml@main
+    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@main
     with:
       repository: "VolmitSoftware/React"
       name: "React"
