@@ -11,12 +11,9 @@ on:
     branches: [ master ]
     paths:
       - '.github/workflows/VolmitSoftware.yml'
-  schedule:
-    - cron: '0 0 * * *'
-
 jobs:
   Iris:
-    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@main
+    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@master
     with:
       repository: "VolmitSoftware/Iris"
       name: "Iris"
@@ -32,13 +29,13 @@ jobs:
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.4 --compile craftbukkit --remapped
         "${!JAVA_HOME_17}"/bin/java -jar BuildTools.jar --rev 1.20.6 --compile craftbukkit --remapped
   Adapt:
-    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@main
+    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@master
     with:
       repository: "VolmitSoftware/Adapt"
       name: "Adapt"
       java: "17"
   React:
-    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@main
+    uses: GaLaXyILY/Iris/.github/workflows/gradle-build.yml@master
     with:
       repository: "VolmitSoftware/React"
       name: "React"
